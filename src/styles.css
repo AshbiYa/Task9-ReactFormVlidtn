@@ -1,0 +1,26 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.center-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-decoration: none;
+}
+
+/* Add a media query to adjust the button for small screens */
+@media (max-width: 768px) {
+  .center-button,
+  .home-page {
+    flex-direction: column; /* Stack elements on top of each other */
+  }
+
+  .center-button button,
+  .home-page button {
+    display: block; /* Display the button on small screens */
+    margin-top: 20px; /* Add spacing between elements */
+  }
+}

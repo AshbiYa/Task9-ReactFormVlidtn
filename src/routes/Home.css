@@ -1,0 +1,175 @@
+.home-page {
+  background-color: rgb(174, 114, 84);
+
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-page button {
+  margin-top: 20px;
+  color: chocolate;
+}
+@media (mix-width: 758px) {
+  .home-page button {
+    max-width: 100%; /* Full width on small screens */
+    margin: 0 20px; /* Add margin to the sides */
+  }
+
+  .signup-container {
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+  }
+  .h2 {
+    margin-top: 200px;
+  }
+
+  .signup-form {
+    width: 80%;
+    max-width: 400px;
+    padding: 25px;
+    background: lavenderblush;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+  }
+
+  .form-group {
+    margin: 10px 0;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .input success {
+    border-color: green;
+  }
+  .error {
+    border-color: red;
+    color: red;
+  }
+
+  button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #5f391a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: chocolate;
+  }
+
+  success-message a {
+    text-decoration: none;
+    color: green;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  .success-message {
+    margin-top: 10px;
+    text-align: center;
+    color: green;
+    border: 2px solid green;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  .success-message a:hover {
+    text-decoration: underline;
+  }
+
+  /* Base styles for your login page */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: wheat;
+    flex-direction: column;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 300px; /* Limit the maximum width of the form */
+  }
+
+  .form-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .form-container {
+      max-width: 100%; /* Full width on small screens */
+      margin: 0 20px; /* Add margin to the sides */
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+  }
+  /* Eye icon for password field */
+  .form-group i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  /* Error message styles */
+  .form-group .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+
+  /* Success message styles */
+  .success-message {
+    color: green;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .form-container {
+      max-width: 100%; /* Full width on small screens */
+      margin: 0 20px; /* Add margin to the sides */
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+  }
+}
